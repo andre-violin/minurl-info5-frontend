@@ -16,9 +16,10 @@ export default function LoginForm() {
   const [loading, setLoading] = useState(false);
 
   const router = useRouter();
+  console.log(email);
 
-  async function handleSubmit(e) {
-    e.preventDefault(); // impede o comportamento padrão do form (reload da página)
+  async function handleSubmit(event) {
+    event.preventDefault(); // impede o comportamento padrão do form (reload da página)
     setError("");
     setLoading(true);
 
